@@ -42,7 +42,9 @@ public class ConcurrentUtils {
             handlerCountDownLatch.await(timeout, TimeUnit.MILLISECONDS);
         } catch (InterruptedException e) {
             watch.stop();
-            //日志
+            e.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             watch.stop();
             digestTaskExecutor("ConcurrentUtils finish", taskExecutor, watch.getTime());
@@ -117,7 +119,7 @@ public class ConcurrentUtils {
         int activeCount = taskExecutor.getActiveCount();
         int queueSize = taskExecutor.getThreadPoolExecutor().getQueue().size();
 
-        System.out.println(String.format("scene=%，time=%s ms activeCount=%d queueSize=%d", scene, time, activeCount, queueSize));
+        System.out.println(String.format("scene=%s，time=%d ms activeCount=%d queueSize=%d", scene, time, activeCount, queueSize));
 
     }
 }

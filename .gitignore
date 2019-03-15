@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+learn-aop/src/
+learn-common/target/generated-sources/
+learn-common/target/generated-test-sources/
+learn-ioc/src/

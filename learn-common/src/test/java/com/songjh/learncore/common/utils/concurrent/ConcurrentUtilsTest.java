@@ -30,8 +30,10 @@ class ConcurrentUtilsTest {
                 @Override
                 public void run() {
                     List<BasicThreadHandler> handlers = getHandlers();
-
                     ConcurrentUtils.execute(handlers, taskExecutor, 5000);
+                    for (BasicThreadHandler handler : handlers) {
+                        System.out.println(handler.getResult());
+                    }
                 }
             });
         }
@@ -44,7 +46,7 @@ class ConcurrentUtilsTest {
             String doExecute() {
                 try {
                     TimeUnit.SECONDS.sleep(3);
-                    System.out.println("handler1 is running in" + Thread.currentThread().getName());
+                    System.out.println("handler1 is running in " + Thread.currentThread().getName());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -57,7 +59,7 @@ class ConcurrentUtilsTest {
             String doExecute() {
                 try {
                     TimeUnit.SECONDS.sleep(10);
-                    System.out.println("handler2 is running in" + Thread.currentThread().getName());
+                    System.out.println("handler2 is running in " + Thread.currentThread().getName());
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

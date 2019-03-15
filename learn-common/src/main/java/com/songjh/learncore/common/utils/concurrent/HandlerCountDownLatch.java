@@ -27,7 +27,7 @@ public class HandlerCountDownLatch extends CountDownLatch {
     @Override
     public boolean await(long timeout, TimeUnit unit) throws InterruptedException {
         Boolean result = super.await(timeout, unit);
-        finished = result;
+        finished = true;
         return result;
     }
 
