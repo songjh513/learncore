@@ -12,6 +12,7 @@
         <module name="learn-common" />
         <module name="learn-common-util" />
         <module name="learn-ioc" />
+        <module name="learn-zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="learn-common" target="1.8" />
       <module name="learn-common-util" target="1.7" />
       <module name="learn-ioc" target="1.8" />
+      <module name="learn-zookeeper" target="1.8" />
       <module name="learncore" target="1.8" />
     </bytecodeTargetLevel>
   </component>

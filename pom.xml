@@ -13,6 +13,7 @@
         <module>learn-ioc</module>
         <module>learn-aop</module>
         <module>learn-common</module>
+        <module>learn-zookeeper</module>
     </modules>
 
     <properties>
