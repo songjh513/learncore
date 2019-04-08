@@ -2,9 +2,20 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/learn-aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-activemq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/learn-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/learn-ioc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-design-pattern" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-java-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-rmi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-rpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-spring-aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-spring-ioc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-spring-orm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-spring-rpc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-spring-webmvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/learn-zookeeper" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

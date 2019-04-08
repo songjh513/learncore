@@ -8,20 +8,42 @@
         <outputRelativeToContentRoot value="true" />
         <module name="aop" />
         <module name="ioc" />
+        <module name="learn-activemq" />
         <module name="learn-aop" />
         <module name="learn-common" />
         <module name="learn-common-util" />
+        <module name="learn-design-pattern" />
         <module name="learn-ioc" />
+        <module name="learn-java-core" />
+        <module name="learn-kafka" />
+        <module name="learn-redis" />
+        <module name="learn-rmi" />
+        <module name="learn-rpc" />
+        <module name="learn-spring-aop" />
+        <module name="learn-spring-ioc" />
+        <module name="learn-spring-orm" />
+        <module name="learn-spring-webmvc" />
         <module name="learn-zookeeper" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="aop" target="1.8" />
       <module name="ioc" target="1.8" />
+      <module name="learn-activemq" target="1.8" />
       <module name="learn-aop" target="1.8" />
       <module name="learn-common" target="1.8" />
       <module name="learn-common-util" target="1.7" />
+      <module name="learn-design-pattern" target="1.8" />
       <module name="learn-ioc" target="1.8" />
+      <module name="learn-java-core" target="1.8" />
+      <module name="learn-kafka" target="1.8" />
+      <module name="learn-redis" target="1.8" />
+      <module name="learn-rmi" target="1.8" />
+      <module name="learn-rpc" target="1.8" />
+      <module name="learn-spring-aop" target="1.8" />
+      <module name="learn-spring-ioc" target="1.8" />
+      <module name="learn-spring-orm" target="1.8" />
+      <module name="learn-spring-webmvc" target="1.8" />
       <module name="learn-zookeeper" target="1.8" />
       <module name="learncore" target="1.8" />
     </bytecodeTargetLevel>
