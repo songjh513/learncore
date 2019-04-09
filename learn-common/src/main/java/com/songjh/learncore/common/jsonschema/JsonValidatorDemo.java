@@ -1,13 +1,12 @@
 package com.songjh.learncore.common.jsonschema;
 
+import org.everit.json.schema.Schema;
 import org.everit.json.schema.ValidationException;
 import org.everit.json.schema.loader.SchemaLoader;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import org.junit.Test;
 
 import java.io.InputStream;
-import org.everit.json.schema.Schema;
 
 /**
  * Created  by songjh on 2019-03-21 06:36.
@@ -16,7 +15,6 @@ public class JsonValidatorDemo {
 
 
 
-    @Test
     public void testJsonSchema() {
         InputStream inputStream = getClass().getResourceAsStream("/schema/schemaDemo.json");
         JSONObject Schema = new JSONObject(new JSONTokener(inputStream));

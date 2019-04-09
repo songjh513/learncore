@@ -1,7 +1,7 @@
 package com.songjh.learn.ioc.core;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.songjh.learn.ioc.bean.BeanDefinition;
+import com.songjh.learn.ioc.bean.MyBeanDefinition;
 import com.songjh.learn.ioc.utils.JsonUtils;
 
 import java.io.InputStream;
@@ -27,11 +27,11 @@ public class JsonApplicationContext extends BeanFactoryImpl{
 
         InputStream is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
 
-        List<BeanDefinition> beanDefinitions = JsonUtils.readValue(is,new TypeReference<List<BeanDefinition>>(){});
+        List<MyBeanDefinition> beanDefinitions = JsonUtils.readValue(is,new TypeReference<List<MyBeanDefinition>>(){});
 
         if(beanDefinitions != null && !beanDefinitions.isEmpty()) {
 
-            for (BeanDefinition beanDefinition : beanDefinitions) {
+            for (MyBeanDefinition beanDefinition : beanDefinitions) {
                 registerBean(beanDefinition.getName(), beanDefinition);
             }
         }

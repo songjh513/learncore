@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created  by songjh on 2019-04-07 14:07.
  */
-public class BeanDefinition {
+public class MyBeanDefinition {
 
     private String name;
 

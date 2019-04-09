@@ -1,6 +1,6 @@
 package com.songjh.learn.ioc.core;
 
-import com.songjh.learn.ioc.bean.BeanDefinition;
+import com.songjh.learn.ioc.bean.MyBeanDefinition;
 import com.songjh.learn.ioc.bean.ConstructorArg;
 import com.songjh.learn.ioc.utils.BeanUtils;
 import com.songjh.learn.ioc.utils.ClassUtils;
@@ -21,7 +21,7 @@ public class BeanFactoryImpl implements BeanFactory {
 
     private static final ConcurrentHashMap<String, Object> beanMap = new ConcurrentHashMap<>();
 
-    private static final ConcurrentHashMap<String, BeanDefinition> beanDefineMap = new ConcurrentHashMap<>();
+    private static final ConcurrentHashMap<String, MyBeanDefinition> beanDefineMap = new ConcurrentHashMap<>();
 
     private static final Set<String> beanNameSet = Collections.synchronizedSet(new HashSet<>());
 
@@ -49,12 +49,12 @@ public class BeanFactoryImpl implements BeanFactory {
         return bean;
     }
 
-    protected void registerBean(String name, BeanDefinition bd) {
+    protected void registerBean(String name, MyBeanDefinition bd) {
         beanDefineMap.put(name, bd);
         beanNameSet.add(name);
     }
 
-    private Object createBean(BeanDefinition beanDefinition) throws Exception {
+    private Object createBean(MyBeanDefinition beanDefinition) throws Exception {
         String beanName = beanDefinition.getClassName();
         Class clz = ClassUtils.loadClass(beanName);
         if (clz == null) {
