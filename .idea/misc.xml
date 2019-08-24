@@ -11,6 +11,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/learn-spring-aop/pom.xml" />
         <option value="$PROJECT_DIR$/learn-spring-rpc/pom.xml" />
       </set>
     </option>

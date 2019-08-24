@@ -63,7 +63,7 @@ public class ConcurrentUtils {
         for (BasicThreadHandler handler : handlers) {
             taskExecutor.submit(new Callable<Boolean>() {
                 @Override
-                public Boolean call() throws Exception {
+                public Boolean call() {
                     //计时并执行
                     doInvoke(handler, countDownLatch);
                     //通知主线程执行完毕

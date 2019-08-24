@@ -160,10 +160,12 @@ public class ApplicationContext extends DefaultListableBeanFactory implements Be
             if(null == instance){ return  null;}
             //在实例初始化以前调用一次
             beanPostProcessor.postProcessBeforeInitialization(instance,beanName);
+
             BeanWrapper beanWrapper = new BeanWrapper(instance);
             beanWrapper.setAopConfig(instantionAopConfig(beanDefinition));
             beanWrapper.setPostProcessor(beanPostProcessor);
             this.beanWrapperMap.put(beanName,beanWrapper);
+
             //在实例初始化以后调用一次
             beanPostProcessor.postProcessAfterInitialization(instance,beanName);
             //通过这样一调用，相当于给我们自己留有了可操作的空间
@@ -188,8 +190,6 @@ public class ApplicationContext extends DefaultListableBeanFactory implements Be
         Class aspectClass = Class.forName(before[0]);
         //在这里得到的方法都是原生的方法
         for (Method m : clazz.getMethods()){
-            //public .* com\.gupaoedu\.vip\.spring\.demo\.service\..*Service\..*\(.*\)
-            //public java.lang.String com.gupaoedu.vip.spring.demo.service.impl.ModifyService.add(java.lang.String,java.lang.String)
             Matcher matcher = pattern.matcher(m.toString());
             if(matcher.matches()){
                 //能满足切面规则的类，添加的AOP配置中

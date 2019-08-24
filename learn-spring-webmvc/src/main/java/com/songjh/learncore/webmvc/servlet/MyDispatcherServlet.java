@@ -38,14 +38,14 @@ public class MyDispatcherServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) {
 
         System.out.println("hahah");
     }
 
 
     @Override
-    public void init(ServletConfig config) throws ServletException {
+    public void init(ServletConfig config) {
 
         //定位
         doLoadConfig(config.getInitParameter("contextConfigLocation"));

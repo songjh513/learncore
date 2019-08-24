@@ -16,7 +16,6 @@
         <module>learn-common</module>
         <module>learn-zookeeper</module>
         <module>learn-rpc</module>
-        <module>learn-rpc</module>
         <module>learn-design-pattern</module>
         <module>learn-java-core</module>
         <module>learn-redis</module>
@@ -24,6 +23,8 @@
         <module>learn-activemq</module>
         <module>learn-rmi</module>
         <module>learn-spring-orm</module>
+        <module>learn-netty</module>
+        <module>learn-spring-guides</module>
     </modules>
 
     <properties>
@@ -339,12 +340,7 @@
                 <artifactId>freemarker</artifactId>
                 <version>${freemarker.version}</version>
             </dependency>
-            <!-- httpclient -->
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${httpcomponents.version}}</version>
-            </dependency>
+
             <!-- fastjson -->
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -356,13 +352,6 @@
                 <groupId>org.codehaus.jackson</groupId>
                 <artifactId>jackson-mapper-asl</artifactId>
                 <version>1.9.13</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>2.9.0</version>
             </dependency>
 
             <dependency>

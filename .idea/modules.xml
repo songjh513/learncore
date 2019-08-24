@@ -7,10 +7,12 @@
       <module fileurl="file://$PROJECT_DIR$/learn-design-pattern/learn-design-pattern.iml" filepath="$PROJECT_DIR$/learn-design-pattern/learn-design-pattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-java-core/learn-java-core.iml" filepath="$PROJECT_DIR$/learn-java-core/learn-java-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-kafka/learn-kafka.iml" filepath="$PROJECT_DIR$/learn-kafka/learn-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-netty/learn-netty.iml" filepath="$PROJECT_DIR$/learn-netty/learn-netty.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-redis/learn-redis.iml" filepath="$PROJECT_DIR$/learn-redis/learn-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-rmi/learn-rmi.iml" filepath="$PROJECT_DIR$/learn-rmi/learn-rmi.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-rpc/learn-rpc.iml" filepath="$PROJECT_DIR$/learn-rpc/learn-rpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-spring-aop/learn-spring-aop.iml" filepath="$PROJECT_DIR$/learn-spring-aop/learn-spring-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-spring-guides/learn-spring-guides.iml" filepath="$PROJECT_DIR$/learn-spring-guides/learn-spring-guides.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-spring-ioc/learn-spring-ioc.iml" filepath="$PROJECT_DIR$/learn-spring-ioc/learn-spring-ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-spring-orm/learn-spring-orm.iml" filepath="$PROJECT_DIR$/learn-spring-orm/learn-spring-orm.iml" />
       <module fileurl="file://$PROJECT_DIR$/learn-spring-webmvc/learn-spring-webmvc.iml" filepath="$PROJECT_DIR$/learn-spring-webmvc/learn-spring-webmvc.iml" />
