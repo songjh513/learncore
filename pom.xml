@@ -58,7 +58,7 @@
         <freemarker.version>2.3.23</freemarker.version>
         <quartz.version>2.2.2</quartz.version>
         <httpcomponents.version>4.5.6</httpcomponents.version>
-        <fastjson.version>1.2.51</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
 
         <cglib.version>3.2.2</cglib.version>
         <javassist.version>3.12.1.GA</javassist.version>
